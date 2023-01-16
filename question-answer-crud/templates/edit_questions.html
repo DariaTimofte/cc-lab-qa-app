@@ -1,0 +1,19 @@
+<doctype html>
+    <title>Edit Question</title>
+    <h2>Edit Question</h2>
+    <form method="post" action="/update-question">
+        <dl>
+            <p>
+                <input name="description" value="{{ row['question_text'] }}"
+                    type="text" placeholder="Question" autocomplete="off" required>
+            </p>
+            <p>
+                <input name="category" value="{{ row['category'] }}" 
+                    type="text" placeholder="Category" autocomplete="off">
+            </p>
+        </dl>
+        <p>
+            <input name="id" value="{{ row['question_id'] }}" type="hidden">
+            <input type="submit" value="Submit">
+        </p>
+    </form>
