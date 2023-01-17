@@ -1,0 +1,15 @@
+<doctype html>
+    <title>Edit Categories</title>
+    <h2>Edit Categories</h2>
+    <form method="post" action="/update-category">
+        <dl>
+            <p>
+                <input name="description" value="{{ row['category_text'] }}"
+                    type="text" placeholder="Category" autocomplete="off" required>
+            </p>
+        </dl>
+        <p>
+            <input name="id" value="{{ row['category_id'] }}" type="hidden">
+            <input type="submit" value="Submit">
+        </p>
+    </form>
