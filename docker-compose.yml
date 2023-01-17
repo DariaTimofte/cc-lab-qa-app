@@ -10,3 +10,8 @@ services:
       context: ./question-answer-service
     ports:
       - "5001:5000"
+  microservice3:
+    build:
+      context: ./categories-service
+    ports:
+      - "5002:5000"
