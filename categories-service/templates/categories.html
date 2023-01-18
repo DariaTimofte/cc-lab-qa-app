@@ -1,6 +1,8 @@
 <doctype html>
     <title>Categories</title>
-             
+    
+    <p><a href="{{ url_for('.add_category_view') }}"> Add Category </a></p>
+
     <p>
         {% with messages = get_flashed_messages() %}
         {% if messages %}

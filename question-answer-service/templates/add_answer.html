@@ -1,0 +1,16 @@
+<doctype html>
+    <title>Add Answer</title>
+    <h2>Add Answer</h2>
+    <form method="post" action="/add-answer">
+        <dl>
+            <p>
+                <input name="answer" value="" type="text" 
+                    placeholder="Answer" autocomplete="off" required>
+            </p>
+        </dl>
+        <p>
+            <input name="id" value="{{ question['question_id'] }}" type="hidden">
+            <input name="user_id" value="{{ user['user_id'] }}" type="hidden">
+            <input type="submit" value="Submit">
+        </p>
+    </form>

@@ -1,20 +1,20 @@
 version: "3"
 services:
-  # microservice1:
-  #   build:
-  #     context: ./user-service
-  #   ports:
-  #     - "5000:5000"
-  # microservice2:
-  #   build:
-  #     context: ./question-answer-service
-  #   ports:
-  #     - "5001:5000"
+  microservice1:
+    build:
+      context: ./user-service
+    ports:
+      - "8000:5000"
+  microservice2:
+    build:
+      context: ./question-answer-service
+    ports:
+      - "8001:5001"
   microservice3:
     build:
       context: ./categories-service
     ports:
-      - "5000:5002"
+      - "8002:5002"
   mysqldb:
     image: mysql
     ports:

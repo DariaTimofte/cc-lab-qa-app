@@ -5,11 +5,11 @@
         <dl>
             <p>
                 <input name="description" value="{{ row['question_text'] }}"
-                    type="text" placeholder="Question" autocomplete="off" required>
+                    type="text" placeholder="Question" autocomplete="off">
             </p>
             <p>
-                <input name="category" value="{{ row['category'] }}" 
-                    type="text" placeholder="Category" autocomplete="off">
+                <input name="category" value="{{ row['category_id'] }}" 
+                    type="number" placeholder="Category" autocomplete="off">
             </p>
         </dl>
         <p>

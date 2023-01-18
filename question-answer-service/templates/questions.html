@@ -1,6 +1,6 @@
 <doctype html>
     <title>Questions</title>
-             
+
     <p>
         {% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -14,3 +14,5 @@
     </p>
         
     {{ table }}
+
+    {{ answer_table }}

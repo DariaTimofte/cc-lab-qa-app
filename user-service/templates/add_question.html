@@ -8,11 +8,12 @@
                     placeholder="Question" autocomplete="off" required>
             </p>
             <p>
-                <input name="category" value="" type="text" 
+                <input name="category" value="" type="number" 
                     placeholder="Category" autocomplete="off" required>
             </p>
         </dl>
         <p>
+            <input name="id" value="{{ user['user_id'] }}" type="hidden">
             <input type="submit" value="Submit">
         </p>
     </form>
